@@ -1,0 +1,275 @@
+
+body{
+    background-color: rgb(226, 238, 247);
+}
+
+header{
+    background-color: white;
+    width: 100%;
+    height: 65px; 
+    display: flex;   
+}
+
+.container-nav {
+    margin: auto;
+    min-width: 90%;
+    align-items: center;
+}
+
+nav{
+    display: flex;
+    
+}
+
+nav li{
+    list-style: none;
+    margin-right: 35px;
+   
+}
+
+li a{
+    text-decoration: none;  
+    font-size: 26px;
+    color: black;
+    
+}
+
+li:hover{
+    border-bottom: solid blue;
+    transform: scale(1.08);
+}
+
+nav i{
+    font-size: 25px;
+    margin-right: 5px;
+   
+    
+}
+
+.container{
+    width: 100%;
+}
+
+.container-grid{
+    grid-template-areas: 'grid';
+    grid-template-columns: auto;
+    grid-template-rows: auto;  
+}
+
+#destaque{
+    width: 90%;
+    margin: auto;
+    
+}
+
+.container-destaque{
+    grid-area:'grid';
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    grid-template-rows:  33.3% 33.3% 33.3%;
+    height: calc(100vh);
+}
+
+.caixa{
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+.caixa h2{
+    width: 100%;
+    background: rgba(0, 0, 0, .5);
+    color: #fdfdfdfd;
+    padding: 2rem;
+    text-align: center;
+    font-size: 25px;
+}
+
+.itens-grid{
+    border: solid rgb(207, 202, 202) 1px;
+}
+.item-1{
+    background: url('../img/fortnite.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    grid-column-start:1 ;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 3;
+    margin-right: 4px;
+    margin-bottom: 3px;
+    
+}
+
+.item-2{
+    background-image: url('../img/pubg.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    grid-column-start:4 ;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    margin-bottom: 3px;
+}
+
+.item-3{
+    background-image: url('../img/slack.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    grid-column-start:4 ;
+    grid-column-end: 4;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    margin-bottom: 3px;
+}
+
+.item-4{
+    background-image: url('../img/whatsapp.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    grid-column-start:4 ;
+    grid-column-end: 4;
+    grid-row-start: 3;
+    grid-row-end: 4;
+    
+}
+
+.item-5{
+    background-image: url('../img/cs-go.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    grid-column-start:3 ;
+    grid-column-end: 3;
+    grid-row-start: 3;
+    grid-row-end: 4;
+    margin-right: 4px;
+    
+}
+.alinhar{
+    display: flex;
+   flex-wrap: wrap;
+   min-width: 770px;
+   justify-content: space-between;
+  
+   
+}
+
+.alinhar h2{
+    text-align: center;
+    margin-top: 40px;
+    
+}
+
+.item-6, .item-7, .item-8, .item-9{
+    background-color: white;
+    min-width: 375px;
+    margin: 2px;
+  
+ 
+}
+
+.container-principal{
+    width: 90%;
+    margin: auto;
+    display: flex;
+}
+.titulo{
+    width: 90%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 15px;
+}
+
+#popular{
+    justify-content: space-between;
+}
+
+.itens-principal img{
+width: 300px;
+height: 180px;
+}
+.itens-principal{
+    width: 300px;
+    height: 450px;
+    background-color: white;
+    margin-left: 5px;
+    
+    }
+
+.itens-principal p{
+    margin: 15px;
+    font-size: 18px;
+}
+.itens-principal h3{
+    margin: 15px;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+footer{
+    background-color: white;
+    min-height: 35px;
+    margin-top: 40px;
+   
+}
+
+.rodape h5{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    font-size: 18px;
+    margin: auto;
+}
+
+@media screen and (max-width:500px){
+
+    header{
+        margin: auto;
+        height: auto;
+    }
+
+    nav{
+        display: flex;
+        align-items: center;
+        width: auto;
+        flex-direction: column;
+        margin-bottom: 10px;
+    }
+    .container-destaque{
+        display: flex;
+        flex-direction: column;
+    }
+    .alinhar{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        min-width: 200px;
+    }
+    .item-6, .item-7, .item-8, .item-9{
+       
+        min-width: 200px;  
+    
+    }
+    .item-4{
+        margin-bottom: 3px;
+    }
+
+    
+    .titulo{
+        margin: auto;
+        margin-top: 60px;
+    }
+
+    .container-principal{
+        flex-direction: column;
+        align-items: center;
+    }
+    .itens-principal{
+        margin-bottom: 8px;
+    }
+}
